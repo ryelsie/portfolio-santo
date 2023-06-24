@@ -22,7 +22,6 @@ section {
 /* My Keyboard Section */
 .keyboard-box {
   position: relative;
-  background-color: #0c6efd;
   border-radius: 10px;
   height: 500px;
   transform-style: preserve-3d;
