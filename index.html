@@ -55,6 +55,12 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#my-keyboards">Keyboards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -249,6 +255,72 @@
         </div>
       </div>
 
+      <section id="my-keyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Keyboards</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div
+                class="keyboard-box"
+                data-aos="zoom-out-up"
+                data-aos-delay="500"
+                data-aos-duration="500"
+              >
+                <h4 class="keyboard-name">Keychron K2</h4>
+                <img
+                  src="img/keyboards/3.png"
+                  alt="Keychron K3"
+                  class="keyboard-img"
+                />
+                <a href="#" class="btn btn-light keyboard-detail-button"
+                  >Show Details</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div
+                class="keyboard-box"
+                data-aos="zoom-out-up"
+                data-aos-delay="700"
+                data-aos-duration="500"
+              >
+                <h4 class="keyboard-name">Womier RGB</h4>
+                <img
+                  src="img/keyboards/1.png"
+                  alt="Womier RGB"
+                  class="keyboard-img"
+                />
+                <a href="#" class="btn btn-light keyboard-detail-button"
+                  >Show Details</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div
+                class="keyboard-box"
+                data-aos="zoom-out-up"
+                data-aos-delay="700"
+                data-aos-duration="500"
+              >
+                <h4 class="keyboard-name">Red Dragon</h4>
+                <img
+                  src="img/keyboards/2.png"
+                  alt="Red Dragon"
+                  class="keyboard-img"
+                />
+                <a href="#" class="btn btn-light keyboard-detail-button"
+                  >Show Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -260,7 +332,7 @@
     <!-- Akhir Projects -->
 
     <!-- Gallery -->
-    <div id="gallery">
+    <section id="gallery">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -360,7 +432,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Akhir Gallery -->
 
     <!-- Contact -->
@@ -526,6 +598,17 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="js/raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.min.js"
+    ></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 25,
+        speed: 400,
       });
     </script>
   </body>
